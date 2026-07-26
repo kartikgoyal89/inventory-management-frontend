@@ -13,7 +13,8 @@ const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,11 +35,18 @@ const Login = () => {
       <div className="w-full max-w-sm">
         <div className="mb-8 flex flex-col items-center gap-2">
           <Boxes className="h-9 w-9 text-indigo-600" />
-          <h1 className="text-xl font-semibold text-gray-900">StockFlow</h1>
-          <p className="text-sm text-gray-500">Sign in to manage your inventory</p>
+          <h1 className="text-xl font-semibold text-gray-900">
+            StockFlow Testing
+          </h1>
+          <p className="text-sm text-gray-500">
+            Sign in to manage your inventory
+          </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+        >
           <Input
             label="Email"
             name="email"
@@ -64,7 +72,10 @@ const Login = () => {
 
         <p className="mt-4 text-center text-sm text-gray-500">
           Don't have an account?{" "}
-          <Link to="/register" className="font-medium text-indigo-600 hover:underline">
+          <Link
+            to="/register"
+            className="font-medium text-indigo-600 hover:underline"
+          >
             Create one
           </Link>
         </p>
