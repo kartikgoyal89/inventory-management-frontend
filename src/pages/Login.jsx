@@ -37,7 +37,7 @@ const Login = () => {
           <Boxes className="h-9 w-9 text-indigo-600" />
           <h1 className="text-xl font-semibold text-gray-900">StockFlow</h1>
           <p className="text-sm text-gray-500">
-            Sign in to manage your inventory
+            Sign in to manage your inventory StockFlow
           </p>
         </div>
 
