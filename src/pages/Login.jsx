@@ -35,9 +35,7 @@ const Login = () => {
       <div className="w-full max-w-sm">
         <div className="mb-8 flex flex-col items-center gap-2">
           <Boxes className="h-9 w-9 text-indigo-600" />
-          <h1 className="text-xl font-semibold text-gray-900">
-            StockFlow CI/CD
-          </h1>
+          <h1 className="text-xl font-semibold text-gray-900">StockFlow</h1>
           <p className="text-sm text-gray-500">
             Sign in to manage your inventory StockFlow
           </p>
